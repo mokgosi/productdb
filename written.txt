@@ -1,0 +1,35 @@
+1. Bob has 5, Percy has 3
+
+
+2. Father in law - assuming the woman is married to John's son.
+
+
+3. (6-3)*11-9 = 24
+
+
+4. Option 2
+
+
+5. $ip = getenv('HTTP_CLIENT_IP')?:
+getenv('HTTP_X_FORWARDED_FOR')?:
+getenv('HTTP_X_FORWARDED')?:
+getenv('HTTP_FORWARDED_FOR')?:
+getenv('HTTP_FORWARDED')?:
+getenv('REMOTE_ADDR');
+
+6. SELECT u.firstName, u.surname, count(b.billingAmount) as NoOfTransactions, 
+
+avg(b.billingAmount) as AveragePurchasePrice, 
+sum(b.billingAmount) as TotalPurchaseAmount
+
+FROM Users u 
+LEFT JOIN Billing b on u.id = b.user_id 
+GROUP BY u.id 
+HAVING count(1) > 1;
+
+
+7. echo ($stealth) ? 'Stealth mode activated' : 'Stealth error';
+
+8. I'll use a reputable framework to create a REST API, use OAth for security
+
+	
